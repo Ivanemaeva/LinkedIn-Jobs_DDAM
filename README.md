@@ -23,8 +23,8 @@ circuits, drivers, status
   with race outcomes  
 - **Analytical Q2:** Factors explaining DNFs (grid position, circuit, 
   constructor)  
-- **Analytical Q3:** Fastest lap patterns — who sets them, when, and does 
-  it correlate with race outcome  
+- **Analytical Q3:** Fastest lap patterns (who sets them, when, and does 
+  it correlate with race outcome)  
 - **Clustering (Unsupervised):** Driver career profile clustering based on 
   win rate, DNF rate, points per race, qualifying delta vs teammate  
 - **Classification (Supervised):** Podium finish prediction (top 3 yes/no) 
