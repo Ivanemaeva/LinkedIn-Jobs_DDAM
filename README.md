@@ -1,42 +1,52 @@
-# Formula 1 World Championship — DDAM Project
+# LinkedIn Job Postings — DDAM Project
 
-**Course:** Distributed Data Analysis and Mining  
+**Course:** Distributed Data Analysis and Mining (Prof. Valentina Pansanella)  
 **University:** Università di Pisa — M.Sc. Data Science & Business Informatics  
 **Academic Year:** 2026/27  
 **Author:** Ivane Maeva Nague  
 
 ## Overview
 
-End-to-end data mining project on the Formula 1 World Championship dataset 
-(2011–2024), developed using PySpark in a distributed computing framework.
+You work as a labour market analyst for a public employment agency.
+The agency wants to understand how companies advertise jobs: where pay
+and remote work are disclosed, and how job offers differ across companies.
+The project is built with PySpark.
 
 ## Dataset
 
-**Source:** Kaggle — Formula 1 World Championship (1950–2024) by Rohan Rao  
-**Scope:** 2011–2024 (14 seasons, 286 races)  
-**Key tables:** results, pit_stops, lap_times, qualifying, constructors, 
-circuits, drivers, status  
+**Source:** Kaggle — LinkedIn Job Postings (2023–2024) by arshkon  
+**Scope:** 123,849 job postings, 24,473 companies, 20 March – 20 April 2024 (US)  
+**Tables:** postings, companies, company_industries, company_specialities,
+employee_counts, benefits, job_industries, job_skills, salaries,
+industries, skills  
 
-## Tasks Covered
+Data is not stored in this repo. Download it from Kaggle and place the CSVs in `data/`.
 
-- **Analytical Q1:** Pit stop strategies across constructors and correlation 
-  with race outcomes  
-- **Analytical Q2:** Factors explaining DNFs (grid position, circuit, 
-  constructor)  
-- **Analytical Q3:** Fastest lap patterns (who sets them, when, and does 
-  it correlate with race outcome)  
-- **Clustering (Unsupervised):** Driver career profile clustering based on 
-  win rate, DNF rate, points per race, qualifying delta vs teammate  
-- **Classification (Supervised):** Podium finish prediction (top 3 yes/no) 
-  from grid position, constructor, circuit, qualifying performance  
+## Questions
+
+**Analytical**
+- **Q1:** Which industries and states are more likely to include salary information in their job ads?
+- **Q2:** Which companies and industries advertise remote work, and how does their pay compare with jobs that have no remote label?
+- **Q3:** Do large and small companies offer different kinds of jobs?
+
+**Learning**
+- **Q4 (Supervised):** Can we predict whether a job ad includes salary information?
+- **Q5 (Unsupervised):** Can we group similar job ads using skill categories and job titles?
+
+## Repository Structure
+
+    data/        CSV files (not tracked)
+    notebooks/   01_setup → 02_cleaning → 03_analytics → 04_supervised → 05_unsupervised
+    figures/     Charts used in the report
+    report/      Final report (PDF)
 
 ## Technologies
 
-Python · PySpark · Spark MLlib · PySpark SQL · Pandas · Matplotlib
+Python · PySpark · Spark MLlib · Spark SQL · Pandas · Matplotlib · Google Colab
 
 ## Results
 
-*To be determined.*
+*To be added.*
 
 ## Report & Presentation
 
